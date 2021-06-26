@@ -1,0 +1,113 @@
+.site-header {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+  }
+  .header-item {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+  }
+  .left-box {
+    display: flex;
+    align-items: center;
+  }
+  .header-left-logo {
+    margin-right: 30px;
+  }
+  .header-left {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .header-left-item {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+  .header-left-item:hover {
+    color: #fcb72b;
+  }
+  .header-right {
+    margin-left: auto;
+  }
+  .header-button {
+    padding: 14px 39px;
+    cursor: pointer;
+    background-color: #fcb72b;
+    border: none;
+    color: #fff;
+  }
+  .header-button:hover {
+    background-color: #fff;
+    color: #fcb72b;
+    box-shadow: 0 0 0 2px #fcb72b;
+  }
+  .humburger_btn {
+    z-index: 31;
+    display: none;
+  }
+  @media only screen and (max-width: 657px) {
+    .site-nav {
+      display: none;
+    }
+    .header-right {
+      display: none;
+    }
+    .left-box{
+        margin: 0 auto;
+    }
+    .header--adaptive .site-nav {
+      display: block;
+      position: fixed;
+      top: 20%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 75%;
+      height: auto;
+      background-color: #333a44;
+      z-index: 20;
+    }
+    .header--adaptive .header-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 100px 33px;
+    }
+    .header--adaptive .header-left .header-left-item {
+      display: inline-block;
+      width: 100%;
+      // max-width: 410px;
+      text-align: left;
+      // margin-right: auto;
+      margin-bottom: 32px;
+      margin-left: 0;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      color: #e5ecf4;
+    }
+    .header--adaptive .header-right {
+      z-index: 33;
+      position: absolute;
+      display: block;
+      top: 450%;
+      left: 15%;
+      // transform: translateX(65%);
+    }
+    .humburger_btn {
+      display: block;
+      border: none;
+      background-color: #fff;
+      order: -1;
+    }
+  }

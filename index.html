@@ -11,56 +11,29 @@
 
 <body>
    <!-- header -->
-        <header class="site-header site-header--adaptive">
-            <div class="container">
-                <button class="hamburger-btn" type="button">
-                    <img
-                        class="hamburger-menu--defolt"
-                        src="./imges/gamburg-menu.svg"
-                        alt="hamburger button picture"
-                        width="20"
-                        height="16"
-                    />
-
-                    <img
-                        class="hamburger-menu hamburger-menu--exit"
-                        src="./imges/exit.svg"
-                        alt="hamburger button picture"
-                        width="20"
-                        height="16"
-                    />
-                </button>
-
-                <a class="site-logo-link" href="./index.html">
-                    <img
-                        src="./imges/scoot-logo.svg"
-                        alt="site logo img"
-                        class="site-logo"
-                        width="108"
-                        height="28"
-                    />
-                </a>
-
-        <!-- .site-header-adap -->
-        <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="./about.html">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./locations.html"
-                                >Location</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./careers.html">Careers</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a class="Scootin-link" href="#">Get Scootin</a>
-            </div>
-        </header>
+   <header class="site-header">
+    <div class="container">
+      <div class="header-item">
+        <div class="left-box">
+          <a class="header-left-logo" href="index.html"><img class="site-logo" src="./images/scoot.svg" 
+              srcset="./images/scoot.svg 1x, ./images/scoot@2x.png 2x" alt="site-logo" /></a>
+          <nav class="site-nav">
+            <ul class="header-left">
+              <li><a class="header-left-item" href="./about.html">About</a></li>
+              <li><a class="header-left-item" href="#">Location</a></li>
+              <li><a class="header-left-item" href="#">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="humburger_btn" type="button">
+          <img src="./images/Humburger2.svg" alt="nav Humburger2 button imges" width="33" height="26" />
+        </button>
+        <div class="header-right">
+          <button class="header-button" type="button">Get Scootin</button>
+        </div>
+      </div>
+    </div>
+  </header>
 
 </body>
 
